@@ -200,3 +200,9 @@ export const movies = {
         'cast': 'Shameik Moore, Jake Johnson, Hailee Steinfeld'
     }
 }
+
+
+for (const movie in movies) {
+    const { titulo: titulo, duracion: duracion } = {...movies[movie] }
+    console.log(titulo + duracion);
+}
