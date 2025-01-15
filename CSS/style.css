@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html, body {
     margin:0;
     padding:0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
+    font-family: "Poppins", serif;
 
 @media (min-width: 772px){ /* Other devices' version */
 .mainMenuContainer{
-    height:5vw;
+    height:4rem;
     display:flex;
     flex-direction:row; 
     justify-content: space-around ;
+    background-color: #ADD8E6;
 }
 .searchBar{
     display:flex;
@@ -32,16 +34,38 @@ html, body {
     height:auto;
     display:flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-content: center;
     justify-content: center;
 }
 .movieItem{
 height: 25rem;
 width: 20rem;
 margin: 2rem;
+padding:1rem;
+display:flex;
+flex-direction:column;
+align-items:center;
+background-color:#ADD8E6;
+}
+.movieImg{
+    width:10rem;
+    height:13rem;
+}
+.cardTitle {
+    font-size:1.1rem
+}
+.movieSummary{
+    font-size: 0.9rem;
+}
+.seeMore{
+    background-color: #FFA07A;
+    border:none;
+    height:2rem;
+    font-weight: bold;
+    border-radius: 5%;
 }
 }
-
+}
 @media (max-width: 772px){  /* mobile version */
 
 }
