@@ -1,5 +1,5 @@
-export const movies = {
-    1: {
+export const movies = [
+     {  'id':1,
         'titulo': 'El Rey León',
         'imagen': 'https://link-a-la-imagen.com/el-rey-leon.jpg',
         'resumen': 'Un joven león llamado Simba debe enfrentar su destino como rey de la sabana africana tras la muerte de su padre, Mufasa.',
@@ -9,7 +9,7 @@ export const movies = {
         'fechaLanzamiento': '1994-06-15',
         'cast': 'Matthew Broderick, James Earl Jones, Jeremy Irons, Whoopi Goldberg'
     },
-    2: {
+     {  'id':2,
         'titulo': 'Titanic',
         'imagen': 'https://link-a-la-imagen.com/titanic.jpg',
         'resumen': 'La historia de amor entre Jack y Rose a bordo del tristemente célebre RMS Titanic.',
@@ -19,7 +19,7 @@ export const movies = {
         'fechaLanzamiento': '1997-12-19',
         'cast': 'Leonardo DiCaprio, Kate Winslet, Billy Zane'
     },
-    3: {
+     {   'id':3,
         'titulo': 'Avatar',
         'imagen': 'https://link-a-la-imagen.com/avatar.jpg',
         'resumen': 'En el planeta Pandora, un ex-marine se infiltra en la tribu de los Na’vi para ayudar a una corporación minera.',
@@ -29,7 +29,7 @@ export const movies = {
         'fechaLanzamiento': '2009-12-18',
         'cast': 'Sam Worthington, Zoe Saldana, Sigourney Weaver'
     },
-    4: {
+     {   'id':4,
         'titulo': 'The Dark Knight',
         'imagen': 'https://link-a-la-imagen.com/dark-knight.jpg',
         'resumen': 'Batman enfrenta a su mayor enemigo, el Joker, quien busca sumergir a Gotham en el caos.',
@@ -39,7 +39,7 @@ export const movies = {
         'fechaLanzamiento': '2008-07-18',
         'cast': 'Christian Bale, Heath Ledger, Aaron Eckhart'
     },
-    5: {
+     {   'id':5,
         'titulo': 'Forrest Gump',
         'imagen': 'https://link-a-la-imagen.com/forrest-gump.jpg',
         'resumen': 'La extraordinaria vida de Forrest Gump, un hombre con un coeficiente intelectual bajo, pero con una vida llena de eventos históricos y momentos especiales.',
@@ -49,7 +49,7 @@ export const movies = {
         'fechaLanzamiento': '1994-07-06',
         'cast': 'Tom Hanks, Robin Wright, Gary Sinise'
     },
-    6: {
+     {   'id':6,
         'titulo': 'Inception',
         'imagen': 'https://link-a-la-imagen.com/inception.jpg',
         'resumen': 'Un ladrón especializado en robar secretos mediante el espionaje en los sueños debe realizar una tarea arriesgada.',
@@ -59,7 +59,7 @@ export const movies = {
         'fechaLanzamiento': '2010-07-16',
         'cast': 'Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page'
     },
-    7: {
+     {      'id':7,
         'titulo': 'Jurassic Park',
         'imagen': 'https://link-a-la-imagen.com/jurassic-park.jpg',
         'resumen': 'Un parque temático de dinosaurios se convierte en una pesadilla cuando los animales escapan de sus jaulas.',
@@ -69,7 +69,7 @@ export const movies = {
         'fechaLanzamiento': '1993-06-11',
         'cast': 'Sam Neill, Laura Dern, Jeff Goldblum'
     },
-    8: {
+     {   'id':8,
         'titulo': 'The Godfather',
         'imagen': 'https://link-a-la-imagen.com/godfather.jpg',
         'resumen': 'La historia de la familia mafiosa Corleone y la transformación de Michael Corleone en un líder implacable.',
@@ -79,7 +79,7 @@ export const movies = {
         'fechaLanzamiento': '1972-03-24',
         'cast': 'Marlon Brando, Al Pacino, James Caan'
     },
-    9: {
+     {   'id':9,
         'titulo': 'Star Wars: A New Hope',
         'imagen': 'https://link-a-la-imagen.com/star-wars.jpg',
         'resumen': 'Un joven granjero se une a una rebelión para derrotar a un imperio maligno y salvar la galaxia.',
@@ -89,7 +89,7 @@ export const movies = {
         'fechaLanzamiento': '1977-05-25',
         'cast': 'Mark Hamill, Harrison Ford, Carrie Fisher'
     },
-    10: {
+     {   'id':10,
         'titulo': 'The Matrix',
         'imagen': 'https://link-a-la-imagen.com/matrix.jpg',
         'resumen': 'Un hombre descubre que la realidad en la que vive no es más que una simulación creada por máquinas.',
@@ -99,7 +99,7 @@ export const movies = {
         'fechaLanzamiento': '1999-03-31',
         'cast': 'Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss'
     },
-    11: {
+     {   'id':11,
         'titulo': 'Schindler\'s List',
         'imagen': 'https://link-a-la-imagen.com/schindlers-list.jpg',
         'resumen': 'La historia real de Oskar Schindler, un hombre que salvó a cientos de judíos del Holocausto.',
@@ -109,7 +109,7 @@ export const movies = {
         'fechaLanzamiento': '1993-12-15',
         'cast': 'Liam Neeson, Ben Kingsley, Ralph Fiennes'
     },
-    12: {
+    { 'id':12,
         'titulo': 'Gladiator',
         'imagen': 'https://link-a-la-imagen.com/gladiator.jpg',
         'resumen': 'Un general romano es traicionado y busca venganza en la arena de los gladiadores.',
@@ -119,7 +119,7 @@ export const movies = {
         'fechaLanzamiento': '2000-05-05',
         'cast': 'Russell Crowe, Joaquin Phoenix, Connie Nielsen'
     },
-    13: {
+     {   'id': 13,
         'titulo': 'The Shawshank Redemption',
         'imagen': 'https://link-a-la-imagen.com/shawshank.jpg',
         'resumen': 'La amistad entre dos hombres en prisión se convierte en una historia de esperanza y redención.',
@@ -129,7 +129,7 @@ export const movies = {
         'fechaLanzamiento': '1994-09-22',
         'cast': 'Tim Robbins, Morgan Freeman, Bob Gunton'
     },
-    14: {
+        { 'id':14,
         'titulo': 'Back to the Future',
         'imagen': 'https://link-a-la-imagen.com/back-to-the-future.jpg',
         'resumen': 'Un adolescente viaja en el tiempo y debe asegurarse de que sus padres se conozcan para evitar alterar la historia.',
@@ -139,7 +139,7 @@ export const movies = {
         'fechaLanzamiento': '1985-07-03',
         'cast': 'Michael J. Fox, Christopher Lloyd, Lea Thompson'
     },
-    15: {
+     {   'id':15,
         'titulo': 'Pulp Fiction',
         'imagen': 'https://link-a-la-imagen.com/pulp-fiction.jpg',
         'resumen': 'Las historias de varios personajes se entrelazan en un relato de crimen, violencia y redención.',
@@ -149,7 +149,7 @@ export const movies = {
         'fechaLanzamiento': '1994-10-14',
         'cast': 'John Travolta, Uma Thurman, Samuel L. Jackson'
     },
-    16: {
+     {  'id':16,
         'titulo': 'The Lion King (2019)',
         'imagen': 'https://link-a-la-imagen.com/lion-king-2019.jpg',
         'resumen': 'Remake en live-action de la clásica película animada sobre Simba y su viaje hacia el trono.',
@@ -159,7 +159,7 @@ export const movies = {
         'fechaLanzamiento': '2019-07-19',
         'cast': 'Donald Glover, Beyoncé, James Earl Jones'
     },
-    17: {
+     { 'id':17,
         'titulo': 'Frozen',
         'imagen': 'https://link-a-la-imagen.com/frozen.jpg',
         'resumen': 'La princesa Elsa lucha con sus poderes mágicos y su hermana Anna busca salvar su reino.',
@@ -169,7 +169,7 @@ export const movies = {
         'fechaLanzamiento': '2013-11-27',
         'cast': 'Idina Menzel, Kristen Bell, Josh Gad'
     },
-    18: {
+    { 'id':18,
         'titulo': 'The Avengers',
         'imagen': 'https://link-a-la-imagen.com/avengers.jpg',
         'resumen': 'Un grupo de superhéroes se une para detener una amenaza alienígena que pone en peligro la Tierra.',
@@ -179,7 +179,7 @@ export const movies = {
         'fechaLanzamiento': '2012-05-04',
         'cast': 'Robert Downey Jr., Chris Evans, Mark Ruffalo'
     },
-    19: {
+     {  'id':19,
         'titulo': 'Interstellar',
         'imagen': 'https://link-a-la-imagen.com/interstellar.jpg',
         'resumen': 'Un grupo de astronautas viaja a través de un agujero negro en busca de un nuevo hogar para la humanidad.',
@@ -189,7 +189,7 @@ export const movies = {
         'fechaLanzamiento': '2014-11-07',
         'cast': 'Matthew McConaughey, Anne Hathaway, Jessica Chastain'
     },
-    20: {
+     {   'id':20,
         'titulo': 'Spider-Man: Into the Spider-Verse',
         'imagen': 'https://link-a-la-imagen.com/spider-verse.jpg',
         'resumen': 'Un joven Spider-Man se encuentra con otros Spider-People de diferentes dimensiones para enfrentar a un villano común.',
@@ -199,10 +199,5 @@ export const movies = {
         'fechaLanzamiento': '2018-12-14',
         'cast': 'Shameik Moore, Jake Johnson, Hailee Steinfeld'
     }
-}
+]
 
-
-for (const movie in movies) {
-    const { titulo: titulo, duracion: duracion } = {...movies[movie] }
-    console.log(titulo + duracion);
-}

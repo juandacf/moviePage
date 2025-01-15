@@ -1,0 +1,47 @@
+html, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 772px){ /* Other devices' version */
+.mainMenuContainer{
+    height:5vw;
+    display:flex;
+    flex-direction:row; 
+    justify-content: space-around ;
+}
+.searchBar{
+    display:flex;
+    align-items: Center;
+    width:15rem;
+}
+#inputBar{
+    width:12rem;
+    height:2rem;
+}
+#inputButton{
+    height: 2rem;
+}
+#inputButton:hover{
+    cursor:pointer;
+}
+#movieContainer{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.movieItem{
+height: 25rem;
+width: 20rem;
+margin: 2rem;
+}
+}
+
+@media (max-width: 772px){  /* mobile version */
+
+}
