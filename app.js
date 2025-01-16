@@ -21,10 +21,11 @@ const data = blockInserter
     try {
         const fetchedData = await blockInserter; 
         for(const movie in fetchedData){
-            const {titulo:titulo, imagen:imagen, resumen:resumen } =fetchedData[movie];
+            const {titulo:titulo, imagen:imagen, resumen:resumen, id:id } =fetchedData[movie];
             const movieItem =document.createElement('div');
             const movieContainer = document.getElementById("movieContainer");
             movieItem.classList.add('movieItem');
+            movieItem.setAttribute("id", `${id}`);
             movieItem.innerHTML = `<h1 class="cardTitle">  ${titulo} </h1>
                                    <img src="${imagen}" class="movieImg">
                                    <p class="movieSummary">${resumen}</p>
@@ -32,11 +33,31 @@ const data = blockInserter
             `;
             movieContainer.appendChild(movieItem); 
 
+            const searchButton = document.querySelector("#inputButton")
+            searchButton.onclick = () => {
+                const inputBar = document.querySelector("#inputBar");
+                const inputValue = inputBar.value
+                const loweredInput = inputValue.toLowerCase();
+                for (const movie in fetchedData){
+                    const {titulo:titulo, id:id} = fetchedData[movie];
+                    const loweredTitle = titulo.toLowerCase();
+                    if(!loweredTitle.includes(loweredInput)){
+                       document.getElementById(`${id}`).style.display = 'none';
+                    }
+                }
+                if (loweredInput===''){
+                    location.reload();
+                }
+    
+    }
+            
         }
+
     } catch (error) {
         console.error( error); 
     } finally {
         return; 
     }
 })();
+
 
