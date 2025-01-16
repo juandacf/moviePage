@@ -29,7 +29,7 @@ const data = blockInserter
             movieItem.innerHTML = `<h1 class="cardTitle">  ${titulo} </h1>
                                    <img src="${imagen}" class="movieImg">
                                    <p class="movieSummary">${resumen}</p>
-                                   <button class="seeMore"> Ver Detalles </button>
+                                   <button class="seeMore" id="button${id}"> Ver Detalles </button>
             `;
             movieContainer.appendChild(movieItem); 
 
@@ -48,10 +48,17 @@ const data = blockInserter
                 if (loweredInput===''){
                     location.reload();
                 }
-    
+                
     }
-            
+
         }
+        for(const movie in fetchedData){
+            const {id:id, titulo:titulo, descripcion:descripcion, duracion:duracion, genero:genero, fechaLanzamiento:fechaLanzamiento, cast:cast }= fetchedData[movie];
+            const seeMoreButton = document.getElementById(`button${id}`);
+            seeMoreButton.onclick = ()=>{
+                window.alert(id)
+            }
+            }
 
     } catch (error) {
         console.error( error); 
