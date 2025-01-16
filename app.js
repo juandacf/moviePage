@@ -1,7 +1,6 @@
 import { movies } from "./data/movies.js";
 
 
-
 const blockInserter = new Promise( (resolve,reject)=>{
         if (movies){
              resolve (movies);
@@ -30,8 +29,6 @@ const data = blockInserter
                                    <img src="${imagen}" class="movieImg">
                                    <p class="movieSummary">${resumen}</p>
                                    <button class="seeMore"> Ver Detalles </button>
-            
-            
             `;
             movieContainer.appendChild(movieItem); 
 
@@ -42,7 +39,4 @@ const data = blockInserter
         return; 
     }
 })();
-
-
-
 
