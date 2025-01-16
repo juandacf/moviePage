@@ -171,6 +171,36 @@ align-items: center;
     background-color: #FFA07A;
     height:2rem;
     border:none;
-    font-weight: bold;;
+    font-weight: bold;;}
+
+    .popUp{
+        width:97%;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        position:fixed;
+        top:10%;
+        background-color: #FFA07A;
+        text-align: center;
+        
+    }
+    .popUpPart{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+
+    }
+    .popUpImage{
+        width:40vw;
+        align-self:center;
+    }
+    #closeButton{
+     position:absolute;
+     height:2rem;
+     top:0;
+     left:0;
+    }
+
 }
 }
+
