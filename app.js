@@ -53,12 +53,46 @@ const data = blockInserter
 
         }
         for(const movie in fetchedData){
-            const {id:id, titulo:titulo, descripcion:descripcion, duracion:duracion, genero:genero, fechaLanzamiento:fechaLanzamiento, cast:cast }= fetchedData[movie];
+            const {id:id,imagen:imagen, titulo:titulo, descripcion:descripcion, duracion:duracion, genero:genero, fechaLanzamiento:fechaLanzamiento, cast:cast }= fetchedData[movie];
             const seeMoreButton = document.getElementById(`button${id}`);
             seeMoreButton.onclick = ()=>{
-                window.alert(id)
+                const popUp = document.createElement('div');
+                const mainContainer = document.querySelector("#movieContainer")
+                popUp.classList.add('popUp');
+                popUp.innerHTML =`
+        <div class="popUpPart">
+            <img src="${imagen}" alt="" class="popUpImage" >
+        </div>
+        <div class="popUpPart">
+        <img src=./images/close.png id="closeButton">
+            <h1 class="popUpTitle"> Titulo: ${titulo}</h1>
+            <p class="popUpParagraph"> Descripćión: ${descripcion}</p>
+            <div class="popUpLowerContent">
+                <div class="popUpLCPart">
+                    <p class="popUpInfo"><span class="bold">Cast:</span> ${cast}</p>
+                </div>
+                <div class="popUpLCPart">
+                    <p class="popUpInfo"><span class="bold">Duracion:</span> ${duracion}</p>
+                    <p class="popUpInfo"><span class="bold">Genero:</span> ${genero}</p>
+                    <p class="popUpInfo"><span class="bold">Fecha lanzamiento:</span> ${fechaLanzamiento}</p>
+                </div>
+            </div>
+
+        </div>
+                `;
+                popUp.style.display= 'flex';
+                mainContainer.appendChild(popUp);
+                const closeButton = document.getElementById('closeButton');
+                closeButton.onclick = ()=> {
+                    document.querySelector(".popUp").style.display = 'none';
+                    location.reload();
+                }
+
             }
+
+
             }
+
 
     } catch (error) {
         console.error( error); 

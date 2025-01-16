@@ -5,6 +5,10 @@ html, body {
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Poppins", serif;
+}
+.bold {
+    font-weight: bold;;
+}
 
 @media (min-width: 772px){ /* Other devices' version */
 .mainMenuContainer{
@@ -73,8 +77,57 @@ background-color:#ADD8E6;
 .seeMore::hover{
     cursor:pointer;
 }
+.popUp{
+    height:30rem;
+    width:50rem;
+    position:fixed;
+    background-color: #FFA07A;
+    top:30vh;
+    display:flex;
+}
+.popUpPart{
+width:50%;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+}
+.popUpImage{
+    height:80%;
+    width:70%;
+}
+.popUpLowerContent{
+    height:auto;
+    width:90%;
+    display:flex;
+}
+.popUpLCPart{
+    height:auto;
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction: column;
+
+}
+.popUpInfo{
+    margin:2%;
+}
+#closeButton{
+    height:4%;
+    position:absolute;
+    top:2%;
+    right:2%;
+
+    
+}
+.popUpTitle{
+    font-size:1rem;
 }
 }
+
+
 
 @media (max-width: 772px){  /* mobile version */
 #mainTitle {
@@ -119,8 +172,5 @@ background-color:#ADD8E6;
     height:2rem;
     border:none;
     font-weight: bold;;
-}
-.movieSummary{
-    
 }
 }
