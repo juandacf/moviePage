@@ -13,6 +13,7 @@ html, body {
     flex-direction:row; 
     justify-content: space-around ;
     background-color: #ADD8E6;
+    margin:0;
 }
 .mainMenu__title{
     display:flex;
@@ -76,5 +77,50 @@ background-color:#ADD8E6;
 }
 
 @media (max-width: 772px){  /* mobile version */
-
+#mainTitle {
+    width:100%;
+    text-align: center;
+}
+.mainMenuContainer{
+    width:100%;
+    margin:0;
+}
+.searchBar{
+    display:flex;
+    align-content:center;
+    justify-content:center;
+}
+#inputBar{
+    height:2rem;
+    width:20rem;
+} 
+#inputButton{
+    height:3rem;
+}
+#movieContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.movieItem {
+    width:80vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin: 1rem;
+    background-color:#ADD8E6;
+}
+.movieImg{
+    width: 8rem;
+}
+.seeMore{
+    background-color: #FFA07A;
+    height:2rem;
+    border:none;
+    font-weight: bold;;
+}
+.movieSummary{
+    
+}
 }
